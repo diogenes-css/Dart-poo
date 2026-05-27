@@ -1,0 +1,127 @@
+1. Atividade 
+
+Crie uma classe chamada Produto com os seguintes atributos:
+
+nome
+preco
+quantidade
+
+Crie um construtor com this.
+
+Crie um método chamado mostrarDados() que exiba:
+
+Nome do produto
+Preço
+Quantidade
+
+Crie também um método chamado calcularTotal() que mostre o valor total em estoque:
+
+preco * quantidade
+
+No main, crie pelo menos 3 produtos diferentes e chame os métodos.
+
+2. Atividade 
+
+Crie uma atividade com contexto:
+
+Situação-problema
+
+Uma escola técnica deseja criar um sistema simples para cadastrar equipamentos do laboratório.
+
+Cada equipamento deve possuir:
+
+nome
+patrimonio
+laboratorio
+status
+
+O aluno deve:
+
+Criar a classe Equipamento.
+Criar os atributos.
+Criar o construtor usando this.
+Criar um método mostrarDados().
+Criar 3 objetos no main.
+Mostrar os dados dos equipamentos no terminal.
+
+Exemplo de equipamentos:
+
+Computador
+Projetor
+Roteador
+
+3. Exercícios 
+
+Crie uma lista de exercícios para fixação:
+
+Exercício 1
+
+Crie uma classe Livro com:
+
+titulo
+autor
+anoPublicacao
+
+Crie um construtor e um método para exibir os dados do livro.
+
+4. Exercício
+
+Crie uma classe Funcionario com:
+
+nome
+cargo
+salario
+
+Crie um método chamado mostrarFuncionario().
+
+4. Exercício 
+
+Crie uma classe Personagem com:
+
+nome
+vida
+forca
+
+Crie um método chamado atacar() que mostre uma mensagem de ataque.
+
+5. Exercício 
+
+Crie uma classe Celular com:
+
+marca
+modelo
+armazenamento
+
+Crie 2 objetos e mostre seus dados.
+
+6. Exercício 
+
+Crie uma classe Curso com:
+
+nome
+cargaHoraria
+professor
+
+
+Código da Aula:
+
+class Aluno {
+  String nome;
+  int idade;
+  String curso;
+  Aluno(this.nome, this.idade, this.curso);
+  void apresentar() {
+    print('Nome: $nome');
+    print('Idade: $idade');
+    print('Curso: $curso');
+    print('--------------------');
+  }
+}
+void main() {
+  Aluno aluno1 = Aluno('Ana', 16, 'Desenvolvimento de Sistemas');
+  Aluno aluno2 = Aluno('Bruno', 17, 'Informática');
+  Aluno aluno3 = Aluno('Carla', 16, 'Redes de Computadores');
+  aluno1.apresentar();
+  aluno2.apresentar();
+  aluno3.apresentar();
+}
